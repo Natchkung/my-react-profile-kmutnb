@@ -8,7 +8,7 @@ function App() {
     <>
       <Header/>
       <h1 className="mt-4">Hello Wolrd</h1>
-      <h6 className='text-center'>test</h6>
+      <h6 className='text-center'>test1</h6>
     </>
   );
 }
