@@ -1,14 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
+import Header from './components/header/Header';
 
 
 function App() {
   return (
     <>
       <Header/>
-      <h1 className="mt-4">Hello Wolrd</h1>
-      <h6 className='text-center'>test1</h6>
     </>
   );
 }
