@@ -1,9 +1,9 @@
 import React from 'react'
-import './credit.css/'
+import './credit.css';
 
 const Credit = () => {
   return (
-    <div>Credit</div>
+    <section id="credit">Credit</section>
   )
 }
 
