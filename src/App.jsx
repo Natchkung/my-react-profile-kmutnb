@@ -11,7 +11,7 @@ import Myphoto from './components/myphoto/Myphoto';
 
 
 function App() {
-  return (
+  return (  
     <>
       <Header/>
       <Nav/>
