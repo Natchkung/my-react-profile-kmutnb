@@ -1,0 +1,52 @@
+.header__container{
+    display: flex;
+    padding: 170px;
+    align-items: center;
+    background: url(https://media.discordapp.net/attachments/1091963899827462225/1148158421883957288/Background.png?width=1920&height=1080);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.hello-header-hello{
+    animation: slide 0.5s forwards;
+    animation-delay: 0.3s;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header-typewriter{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.typewriter{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: aqua;
+}
+
+.hello-header{
+    width: 60%;
+}
+
+.container-photo{
+    transform: scale(80%);
+}
+
+.contact-header{
+    display: flex;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+.contact-header a {
+    margin-left: 10px;
+}
+
+@keyframes slide {
+    100% { 
+        left: 50%; 
+        width: max-content;
+    } 
+} 
