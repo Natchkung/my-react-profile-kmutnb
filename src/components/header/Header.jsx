@@ -5,11 +5,14 @@ import {CiFacebook} from 'react-icons/ci';
 import {AiOutlineInstagram,AiOutlineGithub,AiOutlineMail} from 'react-icons/ai';
 import {FaDiscord} from 'react-icons/fa';
 import Scramblertext from './Scramblertext.js'
+import { motion } from "framer-motion";
+import { slideIn } from "../utils/motion";
+import EarthCanvas from './canvas/Earth';
 
 const Header = () => {
 
   const photo = {
-    logo_cs: 'https://media.discordapp.net/attachments/1091963899827462225/1150083930784006204/logo-cs.png'
+    logo_cs: 'https://media.discordapp.net/attachments/1091963899827462225/1150142785081593876/world.png?width=447&height=447'
   };
 
   const link = {
@@ -44,11 +47,11 @@ const Header = () => {
         <div className="hello-content">
         <h1>{content_text.content1}</h1>
         <div className="content-animation">
-        <span id="space-content">|</span><span id='type-writer'><Scramblertext/></span>
-        </div>
+        <span id="space-content">|</span><span id='type-writer'><Scramblertext/></span></div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque enim cupiditate porro laudantium ipsum perspiciatis expedita nostrum. Quae eveniet aperiam, ducimus repellendus ad distinctio assumenda corrupti magnam est accusamus beatae optio alias unde quas possimus fugiat odit in id sequi non reiciendis expedita libero! Necessitatibus numquam impedit ex sequi?</h5>
         </div>
         <div className="logo-content">
-
+        <EarthCanvas />
         </div>
       </div>
        </div>

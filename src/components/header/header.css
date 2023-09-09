@@ -77,3 +77,13 @@ header{
 .hello-content{
     width: 60%;
 }
+
+.logo-content{
+    width: 70%;
+    height: 50%;
+}
+
+@media screen and (max-width: 600){
+    
+
+}
