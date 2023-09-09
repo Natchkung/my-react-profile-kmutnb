@@ -40,7 +40,8 @@ html{
 
 body{
     font-family: 'IBM Plex Sans Thai', sans-serif;
-    background-color: var(--color-bg);
+    background: linear-gradient(to top, #05101f 0%,#040615 92%,rgb(17, 43, 68) 100%);
+    
     color: var(--color-white);
     line-height: 1.7;
     /* background-image: url(../src/assets/); */

@@ -1,52 +1,79 @@
-.header__container{
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=IBM+Plex+Sans+Thai:wght@500&family=Russo+One&display=swap');
+
+header{
     display: flex;
-    padding: 170px;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header{
+    position: relative;
+    width: 100%;
+}
+
+.container_header{
+    width: 100%;
+}
+
+.header_nav{
+    display: flex;
     align-items: center;
-    background: url(https://media.discordapp.net/attachments/1091963899827462225/1148158421883957288/Background.png?width=1920&height=1080);
-    background-repeat: no-repeat;
-    background-size: auto;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
-.hello-header-hello{
-    animation: slide 0.5s forwards;
-    animation-delay: 0.3s;
-    font-size: 1.5rem;
-    font-weight: 500;
+.icon_cs h1{
+    font-size: 3.5vh;
 }
 
-.header-typewriter{
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-right: 10px;
+.icon_cs h1 b{
+    font-size: 5vh;
+    color: #0084ff;
 }
 
-.typewriter{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: aqua;
+.icon_all_social{
+    display: flex;
+    align-items: center;
+    font-size: 4vh;
 }
 
-.hello-header{
+.icon_all_social a{
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.content-header{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 200px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.content-header .hello-content #type-writer{
+    margin-left: 10px;
+    font-size: 2.5rem;
+    color: #0084ff;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Russo One', sans-serif;
+}
+.content-header .hello-content #space-content{
+    margin-left: 10px;
+    font-size: 5vh;
+    color: #00aeff;
+}
+
+.content-animation{
+    display: flex;
+}
+
+.hello-content{
     width: 60%;
 }
-
-.container-photo{
-    transform: scale(80%);
-}
-
-.contact-header{
-    display: flex;
-    margin-top: 50px;
-    font-size: 3rem;
-}
-
-.contact-header a {
-    margin-left: 10px;
-}
-
-@keyframes slide {
-    100% { 
-        left: 50%; 
-        width: max-content;
-    } 
-} 
