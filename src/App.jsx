@@ -7,7 +7,6 @@ import Videome from './components/videome/Videome';
 import Article from './components/article/Article';
 import Credit from './components/credit/Credit';
 import Footer from './components/footer/Footer';
-import Myphoto from './components/myphoto/Myphoto';
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Header/>
       <Nav/>
       <About/>
-      <Myphoto/>
       <Videome/>
       <Article/>
       <Credit/>

@@ -23,7 +23,9 @@ const About = () => {
           </div>
         </div>
         <div className="detail_me">
-
+        <h5 className='text-center font-medium text-slate-500'>INTRODUCTION</h5>
+            <h1 className='text-center'>ABOUT ME</h1>
+            
         </div>
       </div>
     </section>
