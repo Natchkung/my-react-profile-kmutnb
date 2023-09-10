@@ -49,7 +49,13 @@ const Header = () => {
         <div className="content-animation">
         <span id="space-content">|</span><span id='type-writer'><Scramblertext/></span></div>
         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque enim cupiditate porro laudantium ipsum perspiciatis expedita nostrum. Quae eveniet aperiam, ducimus repellendus ad distinctio assumenda corrupti magnam est accusamus beatae optio alias unde quas possimus fugiat odit in id sequi non reiciendis expedita libero! Necessitatibus numquam impedit ex sequi?</h5>
-        <div className='mt-10 w-full flex justify-start items-center flex-col text-xs '>
+        </div>
+        <div className="logo-content">
+        <EarthCanvas />
+        </div>
+      </div>
+       </div>
+       <div className='w-full flex justify-start items-center flex-col text-xs scroll'>
           Scroll to explore
           <a href="#about">
             <div className='w-[35px] h-[64px] rounded-3xl  border-solid border-2 border-sky-500  flex justify-center items-start p-2 mt-4 shadow-lg shadow-cyan-500/50 ...'>
@@ -67,12 +73,6 @@ const Header = () => {
             </div>
           </a>
         </div>
-        </div>
-        <div className="logo-content">
-        <EarthCanvas />
-        </div>
-      </div>
-       </div>
     </header>
   )
 }
