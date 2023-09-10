@@ -58,7 +58,7 @@ const Header = () => {
                 y: [ 0, 24 ,0]
               }}
               transition={{
-                duration: 1.5,
+                duration: 3,
                 repeat: Infinity,
                 repeatType:'loop'
               }}
