@@ -18,7 +18,6 @@
     width: 70%;
     height: 100%;
     border-radius: 20px;
-    /* transform: rotate3d(30, 90, 15, -60deg); */
 }
 
 .content_photo_me img{
@@ -30,4 +29,40 @@
     width: 50%;
     height: 100%;
     /* background-color: aliceblue; */
+}
+
+@media screen and (max-width: 1020px){
+    .container_about{
+        flex-direction: column;
+    }
+
+    .container_photo_me{
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+    }
+    
+    .content_photo_me{
+        width: 70%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container_about{
+        flex-direction: column;
+    }
+
+    .container_photo_me{
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+    }
+    
+    .content_photo_me{
+        width: 70%;
+        height: 100%;
+        border-radius: 20px;
+    }
 }
