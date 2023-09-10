@@ -25,5 +25,5 @@ export default function App() {
     i++;
   }
 
-  return <h1>{text}</h1>;
+  return <span>{text}</span>;
 }

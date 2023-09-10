@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=IBM+Plex+Sans+Thai:wght@500&family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:ital,wght@1,300&family=IBM+Plex+Sans+Thai:wght@500&family=Kanit:ital,wght@1,600&family=Russo+One&display=swap');
 
 header{
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 .header_nav{
@@ -58,13 +57,11 @@ header{
     margin-left: 10px;
     font-size: 2.5rem;
     color: #0084ff;
-    font-family: 'Russo One', sans-serif;
 }
 .content-header .hello-content #space-content{
     margin-top: -10px;
     font-size: 3rem;
     color: #00aeff;
-    font-family: 'Russo One', sans-serif;
 }
 
 .content-animation{
@@ -77,7 +74,7 @@ header{
     height: 500px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1020px){
     .header_nav{
         display: flex;
         align-items: center;
@@ -127,6 +124,90 @@ header{
     .logo-content{
         margin-top: 100px;
         width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header_nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 1rem;
+    }
+
+    .icon_cs h1{
+        font-size: 2vh;
+        text-shadow: 5px 5px 10px #00070a;
+    }
+    
+    
+    .icon_cs h1 b{
+        font-size: 3vh;
+        color: #0084ff;
+        text-shadow: 5px 5px 10px #00070a;
+    }
+    
+    .icon_all_social{
+        display: flex;
+        align-items: center;
+        font-size: 3vh;
+    }
+    
+    .icon_all_social a{
+        margin-left: 10px;
+        z-index: 2;
+    }
+    
+    .icon_all_social a:hover{
+        font-size: 5vh;
+        cursor: pointer;
+    }
+    
+
+    .content-header{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .content-header .hello-content
+    {
+        transform: scale(90%);
+        width: 100%;
+    }
+
+    .content-header .hello-content #type-writer{
+        margin: 0;
+        margin-left: 10px;
+        color: #0084ff;
+        font-family: 'Russo One', sans-serif;
+    }
+    .content-header .hello-content #space-content{
+        margin: 0;
+        margin-top: -10px;
+        margin-left: 10px;
+        font-size: 3rem;
+        color: #00aeff;
+        font-family: 'Russo One', sans-serif;
+    }
+    
+    .content-animation{
+        display: flex;
+    }
+    
+
+    .logo-content{
+        margin-top: 100px;
+        width: 250px;
         height: 250px;
     }
 
