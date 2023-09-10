@@ -1,6 +1,10 @@
 export const countries = [
   {
     image: "https://media.discordapp.net/attachments/1091963899827462225/1150473941954068571/brazil.jpg",
+    title: "About-me",
+  },
+  {
+    image: "https://media.discordapp.net/attachments/1091963899827462225/1150473941954068571/brazil.jpg",
     title: "Brazil",
   },
   {

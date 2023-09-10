@@ -12,6 +12,10 @@
     justify-content: center;
     width: 50%;
     height: 50%;
+    transform: 
+    perspective(5000px)
+    rotateY(20deg)
+    rotateX(20deg);
 }
 
 .content_photo_me{
@@ -26,10 +30,16 @@
 }
 
 .detail_me{
+    margin-right: 50px;
     width: 50%;
     height: 100%;
-    /* background-color: aliceblue; */
 }
+
+/* .main-detail_me{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+} */
 
 @media screen and (max-width: 1020px){
     .container_about{
@@ -61,7 +71,7 @@
     }
     
     .content_photo_me{
-        width: 70%;
+        width: 90%;
         height: 100%;
         border-radius: 20px;
     }
