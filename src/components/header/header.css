@@ -2,22 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:ital,wght@1,300&family=IBM+Plex+Sans+Thai:wght@500&family=Kanit:ital,wght@1,600&family=Russo+One&display=swap');
 
 header{
-    display: flex;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
     font-family: 'Kanit', sans-serif;
-}
-
-header{
-    position: relative;
-    width: 100%;
-}
-
-.container_header{
-    width: 100%;
 }
 
 .header_nav{
@@ -59,11 +44,14 @@ header{
 
 .content-header{
     display: flex;
-    width: 90%;
     margin: 0 auto;
+    margin: 100px;
     margin-top: 200px;
     justify-content: space-between;
-    height: 100%;
+}
+
+.content-header .hello-content{
+    width: 50%;
 }
 
 .content-header .hello-content #type-writer{
@@ -74,7 +62,6 @@ header{
 }
 .content-header .hello-content #space-content{
     margin-top: -10px;
-    margin-left: 10px;
     font-size: 3rem;
     color: #00aeff;
     font-family: 'Russo One', sans-serif;
@@ -84,21 +71,66 @@ header{
     display: flex;
 }
 
-.hello-content{
-    width: 60%;
-}
-
 .logo-content{
     margin-top: -50px;
-    width: 700px;
+    width: 50%;
     height: 500px;
 }
 
 @media screen and (max-width: 600px){
-    .content-header{
-        flex-direction: column;
-        width: 100%;
+    .header_nav{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
+    .content-header{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .content-header .hello-content
+    {
+        transform: scale(90%);
+        width: 100%;
+    }
+
+    .content-header .hello-content #type-writer{
+        margin: 0;
+        margin-left: 10px;
+        color: #0084ff;
+        font-family: 'Russo One', sans-serif;
+    }
+    .content-header .hello-content #space-content{
+        margin: 0;
+        margin-top: -10px;
+        margin-left: 10px;
+        font-size: 3rem;
+        color: #00aeff;
+        font-family: 'Russo One', sans-serif;
+    }
+    
+    .content-animation{
+        display: flex;
+    }
+    
+
+    .logo-content{
+        margin-top: 100px;
+        width: 350px;
+        height: 250px;
+    }
+
+    .hello-content h1,h5{
+        text-align: center;
+    }
 }
