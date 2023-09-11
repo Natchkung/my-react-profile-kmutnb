@@ -32,7 +32,7 @@ function Bg_particle() {
             },
             style:{
                 position: 'absolute',
-                height: '70vh',
+                height: '90vh',
             },
             particles: {
                 maxWidth: '300',

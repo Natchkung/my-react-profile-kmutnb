@@ -1,4 +1,4 @@
-import * as React from "react";
+import {useEffect,React} from 'react'
 import './header.css';
 import Bg_particle from './bg_particle/Bg_particle';
 import {CiFacebook} from 'react-icons/ci';

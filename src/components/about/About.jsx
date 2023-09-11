@@ -5,6 +5,7 @@ import { countries } from "./Data";
 import VanillaTilt from 'vanilla-tilt';
 
 const About = () => {
+
   useEffect(() =>{
     VanillaTilt.init(document.querySelectorAll(".content_photo_me"),{
       max: 10,
