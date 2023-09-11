@@ -3,6 +3,7 @@ import './about.css'
 import Carousel from "./Carousel";
 import { countries } from "./Data";
 import VanillaTilt from 'vanilla-tilt';
+import { motion } from "framer-motion";
 
 const About = () => {
 
@@ -19,14 +20,42 @@ const About = () => {
     <section id="about">
       <div className="container_about">
         <div className="container_photo_me">
-        <div className="content_photo_me">
-            <Carousel images={countries} />
-          </div>
+		<motion.div
+      className="content_photo_me"
+      initial={{
+		x:-150,
+		transition: {
+			duration: 1
+		  }
+	}}
+      whileInView={{
+		x:0,
+		transition: {
+			duration: 1
+		  }
+	}}
+    >
+        <Carousel images={countries} />
+		</motion.div>
         </div>
         <div className="detail_me">
         <h5 className='mt-4 text-center font-medium text-slate-500'>INTRODUCTION</h5>
             <h1 className='text-center'>ABOUT ME</h1>
-          <div className="main-detail_me">
+					<motion.div
+			className="main-detail_me"
+			initial={{
+				x:300,
+				transition: {
+					duration: 1
+				}
+			}}
+			whileInView={{
+				x:0,
+				transition: {
+					duration: 1
+				}
+			}}
+			>
           <h5 className='mt-4 text-center font-medium text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vel obcaecati possimus voluptatem quos commodi incidunt, exercitationem delectus iusto eligendi quasi quae, suscipit dignissimos ducimus soluta dolorum voluptatibus natus. Laborum beatae ullam iste deleniti ducimus delectus voluptatem aliquam reiciendis blanditiis! Non perspiciatis amet quibusdam in atque inventore! Veritatis, et ullam!</h5>
 			<div className="secon-detail">
 			<div>
@@ -87,7 +116,7 @@ const About = () => {
 						<p>Full Stack Developer และการเขียนโปรแกรมแขนงอื่น ๆ</p>
 					</div>
 			</div>
-          </div>
+			</motion.div>
         </div>
       </div>
     </section>

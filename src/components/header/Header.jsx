@@ -44,15 +44,43 @@ const Header = () => {
 
       {/* ------------------------ content-header---------------------------------- */}
       <div className="content-header">
-        <div className="hello-content">
+          <motion.div
+          className="hello-content"
+          initial={{
+        x:-100,
+        transition: {
+          duration: 1
+          }
+      }}
+          whileInView={{
+        x:0,
+        transition: {
+          duration: 1
+          }
+      }}
+        >
         <h1>{content_text.content1}</h1>
         <div className="content-animation">
         <span id="space-content">|</span><span id='type-writer'><Scramblertext/></span></div>
         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque enim cupiditate porro laudantium ipsum perspiciatis expedita nostrum. Quae eveniet aperiam, ducimus repellendus ad distinctio assumenda corrupti magnam est accusamus beatae optio alias unde quas possimus fugiat odit in id sequi non reiciendis expedita libero! Necessitatibus numquam impedit ex sequi?</h5>
-        </div>
-        <div className="logo-content">
+        </motion.div>
+        <motion.div
+          className="logo-content"
+          initial={{
+        x:200,
+        transition: {
+          duration: 1
+          }
+      }}
+          whileInView={{
+        x:0,
+        transition: {
+          duration: 1
+          }
+      }}
+        >
         <EarthCanvas />
-        </div>
+        </motion.div>
       </div>
        </div>
        <div className='w-full flex justify-start items-center flex-col text-xs scroll'>
