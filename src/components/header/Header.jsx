@@ -67,7 +67,7 @@ const Header = () => {
         <motion.div
           className="logo-content"
           initial={{
-        x:200,
+        x:100,
         transition: {
           duration: 1
           }
@@ -75,7 +75,7 @@ const Header = () => {
           whileInView={{
         x:0,
         transition: {
-          duration: 1
+          duration: 2
           }
       }}
         >

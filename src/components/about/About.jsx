@@ -23,7 +23,7 @@ const About = () => {
 		<motion.div
       className="content_photo_me"
       initial={{
-		x:-150,
+		x:-100,
 		transition: {
 			duration: 1
 		  }
@@ -41,10 +41,11 @@ const About = () => {
         <div className="detail_me">
         <h5 className='mt-4 text-center font-medium text-slate-500'>INTRODUCTION</h5>
             <h1 className='text-center'>ABOUT ME</h1>
-					<motion.div
-			className="main-detail_me"
+			<div className="main-detail_me">
+			<motion.div
+			className="mt-4 text-center font-medium text-slate-500"
 			initial={{
-				x:300,
+				x:-100,
 				transition: {
 					duration: 1
 				}
@@ -56,8 +57,23 @@ const About = () => {
 				}
 			}}
 			>
-          <h5 className='mt-4 text-center font-medium text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vel obcaecati possimus voluptatem quos commodi incidunt, exercitationem delectus iusto eligendi quasi quae, suscipit dignissimos ducimus soluta dolorum voluptatibus natus. Laborum beatae ullam iste deleniti ducimus delectus voluptatem aliquam reiciendis blanditiis! Non perspiciatis amet quibusdam in atque inventore! Veritatis, et ullam!</h5>
-			<div className="secon-detail">
+			<h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vel obcaecati possimus voluptatem quos commodi incidunt, exercitationem delectus iusto eligendi quasi quae, suscipit dignissimos ducimus soluta dolorum voluptatibus natus. Laborum beatae ullam iste deleniti ducimus delectus voluptatem aliquam reiciendis blanditiis! Non perspiciatis amet quibusdam in atque inventore! Veritatis, et ullam!</h5>
+			</motion.div>
+			<motion.div
+			className="secon-detail"
+			initial={{
+				x:100,
+				transition: {
+					duration: 1
+				}
+			}}
+			whileInView={{
+				x:0,
+				transition: {
+					duration: 1
+				}
+			}}
+			>
 			<div>
 						<h3>ชื่อ-สกุล</h3>
 						<p>นาย ณัฐชานน ทรัพย์มีชัย</p>
@@ -115,8 +131,8 @@ const About = () => {
 						<h3>เป้าหมายในอนาคต</h3>
 						<p>Full Stack Developer และการเขียนโปรแกรมแขนงอื่น ๆ</p>
 					</div>
-			</div>
 			</motion.div>
+			</div>
         </div>
       </div>
     </section>
