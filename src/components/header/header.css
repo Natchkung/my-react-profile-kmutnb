@@ -78,6 +78,32 @@ header{
     margin-top: -150px;
 }
 
+@media screen and (max-width: 1400px){
+    .content-header .hello-content{
+        width: 65%;
+        margin-bottom: 100px;
+    }
+    .content-header{
+        margin: 0;
+        margin: 100px;
+        margin-top: 150px;
+    }
+    .content-header .hello-content #type-writer{
+        font-size: 2rem;
+    }
+    .content-header .hello-content #space-content{
+        font-size: 2.5rem;
+    }
+    
+    .logo-content{
+        margin-top: -30px;
+        margin-left: 30px;
+        width: 400px;
+        height: 350px;
+    }
+
+}
+
 @media screen and (max-width: 1020px){
     .header_nav{
         display: flex;
