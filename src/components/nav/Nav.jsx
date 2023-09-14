@@ -3,6 +3,7 @@ import './nav.css';
 import {AiOutlineHome,AiOutlineUser,AiOutlineVideoCamera,AiOutlineCreditCard} from 'react-icons/ai';
 import {MdOutlineArticle} from 'react-icons/md';
 import {useState} from 'react';
+// import { NavLink } from 'react-router-dom';
 
 
 const Nav = () => {
