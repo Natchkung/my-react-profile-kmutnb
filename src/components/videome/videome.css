@@ -1,18 +1,21 @@
 #videome{
     font-family: 'Russo One', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .react-player{
-    padding: 50px;
+    width: 700px;
+    height: 400px;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 600px){
     .react-player{
-        margin-top: -100px;
-        padding: 150px;
+        width: 350px;
+        height: 200px;
     }
-}
+ }

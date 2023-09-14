@@ -1,16 +1,14 @@
 import React from 'react';
 import './videome.css';
-import Myvideo from './video/myvideo.mp4';
-import ReactPlayer from 'react-player';
 import { motion } from "framer-motion";
 
 const Videome = () => {
 
   return (
     <section id="videome">
-      <h1>My Video</h1>
+      <h1 className='text-center'>My Video</h1>
       <motion.div
-          className="hello-content"
+          className="video mt-4"
           initial={{
         y:100,
         transition: {
@@ -24,14 +22,7 @@ const Videome = () => {
           }
       }}
       >
-        <ReactPlayer
-        className='react-player'
-      playing={true}
-      controls
-      width='700px'
-      height='500px'
-      url={Myvideo}
-      />
+      <iframe className="react-player rounded-2xl" src="https://www.youtube.com/embed/N9Rk3d4fCJ8?si=ZS01d6Jk4ijPZmxa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </motion.div>
     </section>
   )
