@@ -16,7 +16,7 @@ import 'aos/dist/aos.css';
 
 const ArticleCard = ({articles}) => (
   <VerticalTimelineElement 
-  contentStyle={{background: 'rgba(15, 116, 189, 0.4)', color: '#fff'}}
+  contentStyle={{background: 'rgba(15, 116, 189, 0.4)', color: '#fff', borderRadius: '13px'}}
   contentArrowStyle={{borderRight: '7px solid #4db5ff'}}
   date={articles.date}
   iconStyle={{background: articles.iconBg }}
