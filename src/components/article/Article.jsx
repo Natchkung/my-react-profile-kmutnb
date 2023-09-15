@@ -1,13 +1,18 @@
-import React from 'react'
+import React,{useEffect}from 'react'
 import './article.css';
 import { VerticalTimeline,VerticalTimelineElement } from 'react-vertical-timeline-component';
-import {motion} from 'framer-motion';
+// import {motion} from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
-import {textVariant} from '../utils/motion';
-import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { articles } from '../constants';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
+
+// Aos.init(
+//   {
+//   }
+// );
 
 const ArticleCard = ({articles}) => (
   <VerticalTimelineElement 
@@ -25,7 +30,7 @@ const ArticleCard = ({articles}) => (
     <div>
       <h3 className='text-white text-[24px] font-bold'>{articles.title}</h3>
       <p className='text-secondary text-[16px] font-semibold' style={{margin:0}}>{articles.company_name}</p>
-      {articles.imgonoff == true &&
+      {articles.imgonoff &&
         <img className="mt-2" src={articles.image} alt={articles.title} />
       }
     </div>
@@ -41,13 +46,16 @@ const ArticleCard = ({articles}) => (
   </VerticalTimelineElement>
 )
 
+
 const Article = () => {
+  useEffect(()=>{
+    Aos.init();
+  }, [])
+
   return (
     <section id="article">
-      <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>COMPUTER SCIENCE ARTICLES</p>
-      <h2 className={styles.sectionHeadText}>ARTICLES</h2>
-      </motion.div>
+        <h5 className='mt-4 text-start font-medium text-sky-500' data-aos="fade-up">COMPUTER SCIENCE ARTICLES</h5>
+          <h1 className='text-[3rem]'>ARTICLES</h1>
 
       <div className="mt-20 flex flex-col">
         <p className='text-center mb-6 text-[2.2rem]'>การป้องกัน DDOS WEBSITE </p>

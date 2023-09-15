@@ -11,6 +11,7 @@ import Article from './components/article/Article';
 import Credit from './components/credit/Credit';
 import Footer from './components/footer/Footer';
 import Webtool from './components/webtool/Webtool';
+import { StarsCanvas } from './components/canvas';
 // "homepage": "http://project.cs.kmutnb.ac.th/~6604062636151/",
 
 function App() {
@@ -39,8 +40,11 @@ function App() {
     </div>
          ) : (
       <BrowserRouter>
-      <Header/>
       <Nav/>
+      <div className='relative z-0'>
+        <Header/>
+        <StarsCanvas />
+        </div>
       <About/>
       <Videome/>
       <Article/>

@@ -1,12 +1,10 @@
 import {useEffect,React} from 'react'
 import './header.css';
-import Bg_particle from './bg_particle/Bg_particle';
 import {CiFacebook} from 'react-icons/ci';
 import {AiOutlineInstagram,AiOutlineGithub,AiOutlineMail} from 'react-icons/ai';
 import {FaDiscord} from 'react-icons/fa';
 import Scramblertext from './Scramblertext.js'
 import { motion } from "framer-motion";
-import { slideIn } from "../utils/motion";
 import { EarthCanvas } from "../canvas";
 
 const Header = () => {
@@ -31,7 +29,7 @@ const Header = () => {
 
   return (
     <header>
-      <Bg_particle/>
+      {/* <Bg_particle/> */}
        <div className="container_header">
         <div className="header_nav">
           <div className="icon_cs">

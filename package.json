@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@twistezo/react-text-scramble": "^1.0.6",
     "@types/three": "^0.156.0",
+    "aos": "^2.3.4",
     "drei": "^2.2.21",
     "framer-motion": "^10.16.4",
     "gasp": "^0.0.2",
