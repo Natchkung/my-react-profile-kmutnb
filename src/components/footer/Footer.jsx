@@ -4,7 +4,7 @@ import './footer.css';
 const Footer = () => {
   return (
     <div className='footer text-center'>
-      Copyright © 2023 Tanabordee Pateepbutsagon. All Rights Reserved
+      Copyright © 2023 Nutchanon Supmeechai. All Rights Reserved
     </div>
   )
 }
