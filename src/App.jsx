@@ -1,3 +1,5 @@
+import React, {useState , useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 import {BrowserRouter} from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
@@ -12,8 +14,31 @@ import Webtool from './components/webtool/Webtool';
 // "homepage": "http://project.cs.kmutnb.ac.th/~6604062636151/",
 
 function App() {
+
+  
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() =>{
+      setLoading(false)
+    }, 5000)
+  }, [])
+
+  
   return (  
-    <BrowserRouter>
+    <>
+      {
+        loading ? (
+          <div className="Loading">
+      <HashLoader
+      size={70}
+      color={"#4db5ff"}
+      loading={loading}
+    />
+    </div>
+         ) : (
+      <BrowserRouter>
       <Header/>
       <Nav/>
       <About/>
@@ -23,6 +48,10 @@ function App() {
       <Credit/>
       <Footer/>
       </BrowserRouter>
+
+      )}
+    </>
+    
   );
 }
 
