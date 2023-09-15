@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.Screen{
+  width: 100%;
+  overflow: hidden;
+}
+
 .Loading{
   text-align: center;
   background: #16232e;

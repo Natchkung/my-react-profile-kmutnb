@@ -27,7 +27,7 @@ function App() {
 
   
   return (  
-    <>
+    <div className='Screen'>
       {
         loading ? (
           <div className="Loading">
@@ -50,7 +50,7 @@ function App() {
       </BrowserRouter>
 
       )}
-    </>
+    </div>
     
   );
 }
