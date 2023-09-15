@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  photoshop,
+  vegas,
+  fontgoogle,
 } from "../../assets";
 
 export const navLinks = [
@@ -95,6 +98,18 @@ const technologies = [
   {
     name: "git",
     icon: git,
+  },
+  {
+    name: "Adobe Photoshop",
+    icon: photoshop,
+  },
+  {
+    name: "Sony Vegas",
+    icon: vegas,
+  },
+  {
+    name: "Google Fonts",
+    icon: fontgoogle,
   },
 ];
 

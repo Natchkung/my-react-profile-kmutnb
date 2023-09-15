@@ -17,6 +17,10 @@ const Header = () => {
 
   const link = {
     facebook: 'https://www.facebook.com/Natx0082/',
+    instagram: 'https://www.instagram.com/n_nnat_48/',
+    github: 'https://github.com/Natchkung',
+    discord: 'https://discordapp.com/users/475327498909908994',
+    email: 'mailto:s6604062636151@email.kmutnb.ac.th',
   };
 
   const content_text = {
@@ -35,10 +39,10 @@ const Header = () => {
           </div>
           <div className="icon_all_social">
           <a href= {link.facebook} ><CiFacebook/></a>
-              <a href=""><AiOutlineInstagram/></a>
-              <a href=""><AiOutlineGithub/></a>
-              <a href=""><FaDiscord/></a>
-              <a href=""><AiOutlineMail/></a>
+              <a href={link.instagram}><AiOutlineInstagram/></a>
+              <a href={link.github}><AiOutlineGithub/></a>
+              <a href={link.discord}><FaDiscord/></a>
+              <a href={link.email}><AiOutlineMail/></a>
           </div>
         </div>
 
