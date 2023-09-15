@@ -8,6 +8,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { articles } from '../constants';
 
+
 const ArticleCard = ({articles}) => (
   <VerticalTimelineElement 
   contentStyle={{background: 'rgba(15, 116, 189, 0.4)', color: '#fff'}}
@@ -24,6 +25,9 @@ const ArticleCard = ({articles}) => (
     <div>
       <h3 className='text-white text-[24px] font-bold'>{articles.title}</h3>
       <p className='text-secondary text-[16px] font-semibold' style={{margin:0}}>{articles.company_name}</p>
+      {articles.imgonoff == true &&
+        <img className="mt-2" src={articles.image} alt={articles.title} />
+      }
     </div>
     <ul className='mt-5 list-disc ml-5 spac-y-2'>
       {articles.points.map((point, index) => (
@@ -46,6 +50,7 @@ const Article = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
+        <p className='text-center mb-6 text-[2.2rem]'>การป้องกัน DDOS WEBSITE </p>
         <VerticalTimeline>
           {articles.map((articles, index) => (
             <ArticleCard key={index} articles={articles} />
