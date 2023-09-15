@@ -50,7 +50,7 @@ header{
 }
 
 .content-header .hello-content{
-    width: 50%;
+    width: 60%;
 }
 
 .content-header .hello-content #type-writer{
@@ -70,7 +70,7 @@ header{
 
 .logo-content{
     margin-top: -50px;
-    width: 50%;
+    width: 40%;
     height: 500px;
 }
 
@@ -127,7 +127,7 @@ header{
 
     .content-header .hello-content
     {
-        transform: scale(90%);
+        padding: 20px;
         width: 100%;
     }
 

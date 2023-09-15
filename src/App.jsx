@@ -8,6 +8,7 @@ import Videome from './components/videome/Videome';
 import Article from './components/article/Article';
 import Credit from './components/credit/Credit';
 import Footer from './components/footer/Footer';
+import Webtool from './components/webtool/Webtool';
 // "homepage": "http://project.cs.kmutnb.ac.th/~6604062636151/",
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <About/>
       <Videome/>
       <Article/>
+      <Webtool/>
       <Credit/>
       <Footer/>
       </BrowserRouter>

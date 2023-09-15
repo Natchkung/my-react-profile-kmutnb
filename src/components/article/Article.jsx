@@ -10,8 +10,8 @@ import { articles } from '../constants';
 
 const ArticleCard = ({articles}) => (
   <VerticalTimelineElement 
-  contentStyle={{background: '#1d1836', color: '#fff'}}
-  contentArrowStyle={{borderRight: '7px solid #232631'}}
+  contentStyle={{background: 'rgba(15, 116, 189, 0.4)', color: '#fff'}}
+  contentArrowStyle={{borderRight: '7px solid #4db5ff'}}
   date={articles.date}
   iconStyle={{background: articles.iconBg }}
   icon={<div className='flex justify-center items-center w-full h-full'>
@@ -41,8 +41,8 @@ const Article = () => {
   return (
     <section id="article">
       <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>Introduction</p>
-      <h2 className={styles.sectionHeadText}>Article</h2>
+      <p className={styles.sectionSubText}>COMPUTER SCIENCE ARTICLES</p>
+      <h2 className={styles.sectionHeadText}>ARTICLES</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

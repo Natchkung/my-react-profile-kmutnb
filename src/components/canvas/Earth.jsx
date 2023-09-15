@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import model from '../stylized_planet.glb';
+import model from '../../assets/stylized_planet.glb';
 import CanvasLoader from "../Loader";
 
 const Earth = () => {

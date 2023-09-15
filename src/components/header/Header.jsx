@@ -7,7 +7,7 @@ import {FaDiscord} from 'react-icons/fa';
 import Scramblertext from './Scramblertext.js'
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
-import EarthCanvas from './canvas/Earth';
+import { EarthCanvas } from "../canvas";
 
 const Header = () => {
 
