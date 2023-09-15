@@ -15,7 +15,6 @@ import { StarsCanvas } from './components/canvas';
 // "homepage": "http://project.cs.kmutnb.ac.th/~6604062636151/",
 
 function App() {
-
   
   const [loading, setLoading] = useState(false);
 
@@ -43,7 +42,7 @@ function App() {
       <Nav/>
       <div className='relative z-0'>
         <Header/>
-        <StarsCanvas />
+        <StarsCanvas/>
         </div>
       <About/>
       <Videome/>
