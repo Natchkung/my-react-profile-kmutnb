@@ -69,7 +69,7 @@ const Header = () => {
         <motion.div
           className="logo-content"
           initial={{
-        x:100,
+        x:150,
         transition: {
           duration: 1
           }
