@@ -4,8 +4,14 @@ import Carousel from "./Carousel";
 import { countries } from "./Data";
 import VanillaTilt from 'vanilla-tilt';
 import { motion } from "framer-motion";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+	useEffect(()=>{
+		Aos.init();
+	  }, [])
 
   useEffect(() =>{
     VanillaTilt.init(document.querySelectorAll(".content_photo_me"),{
@@ -19,119 +25,77 @@ const About = () => {
   return (
     <section id="about">
       <div className="container_about">
-        <div className="container_photo_me">
-		<motion.div
-      className="content_photo_me"
-      initial={{
-		x:-100,
-		transition: {
-			duration: 1
-		  }
-	}}
-      whileInView={{
-		x:0,
-		transition: {
-			duration: 1
-		  }
-	}}
-    >
+        <div className="container_photo_me" data-aos="flip-left" data-aos-duration="3000">
+		<div className="content_photo_me">
         <Carousel images={countries} />
-		</motion.div>
+		</div>
         </div>
         <div className="detail_me">
-        <h5 className='mt-4 text-center font-medium text-slate-500'>INTRODUCTION</h5>
-            <h1 className='text-center'>ABOUT ME</h1>
+        <h5 className='mt-4 text-center font-medium text-slate-500' data-aos="fade-right" data-aos-duration="1000">INTRODUCTION</h5>
+            <h1 className='text-center' data-aos="fade-left" data-aos-duration="1000">ABOUT ME</h1>
 			<div className="main-detail_me">
-			<motion.div
-			className="mt-4 text-center font-medium text-slate-500"
-			initial={{
-				x:-100,
-				transition: {
-					duration: 1
-				}
-			}}
-			whileInView={{
-				x:0,
-				transition: {
-					duration: 1
-				}
-			}}
-			>
-			<h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vel obcaecati possimus voluptatem quos commodi incidunt, exercitationem delectus iusto eligendi quasi quae, suscipit dignissimos ducimus soluta dolorum voluptatibus natus. Laborum beatae ullam iste deleniti ducimus delectus voluptatem aliquam reiciendis blanditiis! Non perspiciatis amet quibusdam in atque inventore! Veritatis, et ullam!</h5>
-			</motion.div>
-			<motion.div
-			className="secon-detail"
-			initial={{
-				x:100,
-				transition: {
-					duration: 1
-				}
-			}}
-			whileInView={{
-				x:0,
-				transition: {
-					duration: 1
-				}
-			}}
-			>
-			<div>
-						<h3>ชื่อ-สกุล</h3>
-						<p>นาย ณัฐชานน ทรัพย์มีชัย</p>
+			<div className="mt-4 text-center font-medium text-slate-500">
+			<h5 data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vel obcaecati possimus voluptatem quos commodi incidunt, exercitationem delectus iusto eligendi quasi quae, suscipit dignissimos ducimus soluta dolorum voluptatibus natus. Laborum beatae ullam iste deleniti ducimus delectus voluptatem aliquam reiciendis blanditiis! Non perspiciatis amet quibusdam in atque inventore! Veritatis, et ullam!</h5>
+			</div>
+			<div className="secon-detail" >
+			<div data-aos="fade-up">
+						<h3 data-aos="fade-left" data-aos-duration="2000">ชื่อ-สกุล</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">นาย ณัฐชานน ทรัพย์มีชัย</p>
 					</div>
 					<div>
-						<h3>ชื่อเล่น</h3>
-						<p>ณัฐ</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">ชื่อเล่น</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">ณัฐ</p>
 					</div>
 					<div>
-						<h3>รหัสนักศึกษา</h3>
-						<p>6604062636151</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">รหัสนักศึกษา</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">6604062636151</p>
 					</div>
 					<div>
-						<h3>กำลังศึกษาอยู่ที่</h3>
-						<p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.)</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">กำลังศึกษาอยู่ที่</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.)</p>
 					</div>
 					<div>
-						<h3>ที่อยู่ปัจจุบัน</h3>
-						<p>33/2 ถนนเทศบาล 8 ตำบล สระแก้ว อำเภอ เมืองสระแก้ว จังหวัดสระแก้ว รหัสไปรษณีย์ 27000</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">ที่อยู่ปัจจุบัน</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">33/2 ถนนเทศบาล 8 ตำบล สระแก้ว อำเภอ เมืองสระแก้ว จังหวัดสระแก้ว รหัสไปรษณีย์ 27000</p>
 					</div>
 					<div>
-						<h3>จบการศึกษามัธยมปลายจาก</h3>
-						<p>โรงเรียนสระแก้ว</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">จบการศึกษามัธยมปลายจาก</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">โรงเรียนสระแก้ว</p>
 					</div>
 					<div>
-						<h3>เกรดเฉลี่ยมัธยมปลาย</h3>
-						<p>3.98</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">เกรดเฉลี่ยมัธยมปลาย</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">3.98</p>
 					</div>
 					<div>
-						<h3>วัน/เดือน/ปี ที่เกิด</h3>
-						<p>20 มีนาคม พ.ศ.2548</p>
-						<p>(<b>อายุ</b> 18 ปี)</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">วัน/เดือน/ปี ที่เกิด</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">20 มีนาคม พ.ศ.2548</p>
+						<p data-aos="fade-left" data-aos-duration="2000">(<b>อายุ</b> 18 ปี)</p>
 					</div>
 					<div>
-						<h3>หมู่เลือด</h3>
-						<p>B (บี)</p>
+						<h3 data-aos="fade-left" data-aos-duration="2000">หมู่เลือด</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">B (บี)</p>
 					</div>
 					<div>
-						<h3>สีที่ชอบ</h3>
+						<h3 data-aos="fade-left" data-aos-duration="2000">สีที่ชอบ</h3>
 						<ul>
-							<li>ฟ้า/น้ำเงิน</li>
-							<li>เขียว</li>
+							<li data-aos="fade-right" data-aos-duration="2000">ฟ้า/น้ำเงิน</li>
+							<li data-aos="fade-left" data-aos-duration="2000">เขียว</li>
 						</ul>
 					</div>
 					<div>
-						<h3>งานอดิเรก</h3>
+						<h3 data-aos="fade-left" data-aos-duration="2000">งานอดิเรก</h3>
 						<ul>
-							<li>ดู YouTube</li>
-							<li>เล่นเกม</li>
-							<li>ศึกษา เขียนเว็บไซต์</li>
-							<li>ศึกษา เขียนโปรแกรม</li>
+							<li data-aos="fade-right" data-aos-duration="2000">ดู YouTube</li>
+							<li data-aos="fade-left" data-aos-duration="2000">เล่นเกม</li>
+							<li data-aos="fade-right" data-aos-duration="2000">ศึกษา เขียนเว็บไซต์</li>
+							<li data-aos="fade-left" data-aos-duration="2000">ศึกษา เขียนโปรแกรม</li>
 						</ul>
 					</div>
 					<div>
-						<h3>เป้าหมายในอนาคต</h3>
-						<p>Full Stack Developer และการเขียนโปรแกรมแขนงอื่น ๆ</p>
+						<h3 data-aos="fade-left">เป้าหมายในอนาคต</h3>
+						<p data-aos="fade-right">Full Stack Developer และการเขียนโปรแกรมแขนงอื่น ๆ</p>
 					</div>
-			</motion.div>
+			</div>
 			</div>
         </div>
       </div>
