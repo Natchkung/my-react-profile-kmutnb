@@ -21,7 +21,7 @@ const Footer = () => {
     <div className='footer'>
       <div className="contact">
         <img src={logo} alt="logo" className='w-[100px] h-[100px]'/>
-        <div className="contact-main1">
+        <div className="contact-main1 text-center">
           <div className="fllow-me mb-3">Contact</div>
           <div className="contact-secon1">
               <a href="tel:0902974175">+66 902974175</a>
