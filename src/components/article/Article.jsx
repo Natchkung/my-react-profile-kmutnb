@@ -36,7 +36,7 @@ const ArticleCard = ({articles}) => (
     <ul className='mt-5 list-disc ml-5 spac-y-2'>
       {articles.points.map((point, index) => (
         <li key={`article-point-${index}`}
-        className='text-white-100 text-[17.5px] max-sm:text-[15px] pl-1 tracking-wider'>
+        className='text-white-100 text-[17.5px] max-sm:text-[15px] pl-1 tracking-wider marker:text-sky-400'>
           {point}
         </li>
       ))}
@@ -63,7 +63,8 @@ const Article = () => {
       <p className='text-center mb-6 text-[2.2rem]'>{hackingwebsite.title1}</p>
       <p className="mb-6 text-[1.3rem] text-center w-full h-full " data-aos="fade-up" data-aos-duration="1000" style={{background: 'rgba(15, 116, 189, 0.4)',borderRadius: '13px',padding:'20px'}}>{hackingwebsite.content}</p>
         <p className='text-center mb-6 text-[2.2rem]'>{hackingwebsite.title2}</p>
-        <VerticalTimeline>
+        <VerticalTimeline
+        >
           {articles.map((articles, index) => (
             <ArticleCard key={index} articles={articles} />
           ))}
