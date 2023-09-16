@@ -36,13 +36,13 @@ const ArticleCard = ({articles}) => (
     <ul className='mt-5 list-disc ml-5 spac-y-2'>
       {articles.points.map((point, index) => (
         <li key={`article-point-${index}`}
-        className='text-white-100 text-[17.5px]
-        pl-1 tracking-wider'>
+        className='text-white-100 text-[17.5px] max-sm:text-[15px] pl-1 tracking-wider'>
           {point}
         </li>
       ))}
     </ul>
-    <div className='text-secondary text-[16px] font-semibold ' style={{margin:0,}}>ขอบคุณรูปภาพจาก</div>
+    <div className='text-secondary text-[16px] font-semibold '>
+      ขอบคุณรูปภาพจาก</div>
     <a href={articles.credit}>{articles.credit}</a>
   </VerticalTimelineElement>
 )
