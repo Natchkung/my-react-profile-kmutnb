@@ -42,7 +42,7 @@ function App() {
       <Nav/>
       <div className='relative z-0'>
         <Header/>
-        <StarsCanvas/>
+          <StarsCanvas/>
         </div>
       <About/>
       <Videome/>

@@ -9,7 +9,7 @@ nav{
     position: fixed;
     left: -100%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 2.5rem;
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
@@ -39,5 +39,11 @@ nav a.active{
     100% { 
         left: 50%; 
         width: max-content;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        bottom: 2rem;
     }
 }

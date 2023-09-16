@@ -14,10 +14,10 @@
 	padding: 1em 0;
     padding: 50px;
     border-radius: 15px;
-    background: linear-gradient(109.6deg, rgb(20, 30, 48, 0.2) 11.2%, rgb(36, 59, 85) 91.1%);
+    background: linear-gradient(109.6deg,rgb(36, 59, 85,0.5) 11.2%, rgb(20, 30, 48, 0.2) 11.2%, rgb(36, 59, 85,0.5) 91.1%,rgb(36, 59, 85) 91.1%);
 }
 .content {
-    transform: translateX(10%);
+    margin-left: 60px;
     display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
 	gap: 1.5em;
