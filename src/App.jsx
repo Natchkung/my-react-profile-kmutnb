@@ -12,6 +12,7 @@ import Credit from './components/credit/Credit';
 import Footer from './components/footer/Footer';
 import Webtool from './components/webtool/Webtool';
 import { StarsCanvas } from './components/canvas';
+import Blobity from 'blobity';
 // "homepage": "http://project.cs.kmutnb.ac.th/~6604062636151/",
 
 function App() {
@@ -24,7 +25,10 @@ function App() {
       setLoading(false)
     }, 5000)
   }, [])
-
+  
+  const options = { color: 'rgb(0, 162, 255)',dotColor: '#fff',mode: 'slow' };
+  new Blobity(options);
+  
   
   return (  
     <div className='Screen'>

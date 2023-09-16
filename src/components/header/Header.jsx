@@ -98,8 +98,8 @@ const Header = () => {
        </div>
        <div className='w-full flex justify-start items-center flex-col text-xs scroll'>
           Scroll to explore
-          <a href="#about">
-            <div className='w-[35px] h-[64px] rounded-3xl  border-solid border-2 border-sky-500  flex justify-center items-start p-2 mt-4 shadow-lg shadow-cyan-500/50 ...'>
+          <a href="#about" data-no-blobity>
+            <div className='w-[35px] h-[64px] rounded-3xl  border-solid border-2 border-sky-500  flex justify-center items-start p-2 mt-4 shadow-lg shadow-cyan-500/50 ...' >
             <motion.dev
               animate={{
                 y: [ 0, 24 ,0]

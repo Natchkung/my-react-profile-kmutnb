@@ -45,16 +45,16 @@ const Credit = () => {
             <div>
 								<h3>ภาษาที่ใช้ในการเขียนเว็บ</h3>
 								<ul>
-									<li className='text-[#4db5ff] hover:text-[white] cursor-pointer'>HTML</li>
-									<li className='text-[#4db5ff] hover:text-[white] cursor-pointer'>CSS</li>
-                  <li><a href="https://react.dev/">React Js</a></li>
-                  <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-									<li className='text-[#4db5ff] hover:text-[white] cursor-pointer'>JavaScript</li>
+									<li ><a href="#">HTML</a></li>
+									<li ><a href="#">CSS</a></li>
+									<li><a href="https://react.dev/">React Js</a></li>
+									<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+									<li ><a href="#">JavaScript</a></li>
 								</ul>
 						</div>
             <div>
 							<h3>เครื่องมือหรือซอฟต์แวร์ที่ใช้</h3>
-							<p>เขียนเว็บไซต์ - <a target="_blank" href="https://code.visualstudio.com">Visual Studio Code</a></p>
+							<p>เขียนเว็บไซต์ - <a href="https://code.visualstudio.com">Visual Studio Code</a></p>
 								<p>ทดสอบเว็บไซต์</p>
 								<ul>
 									<li><a href="https://www.microsoft.com/en-us/edge/download?form=MA13FJ">Microsoft Edge [115]</a></li>
