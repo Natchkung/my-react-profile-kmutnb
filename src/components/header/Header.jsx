@@ -6,6 +6,7 @@ import {FaDiscord} from 'react-icons/fa';
 import Scramblertext from './Scramblertext.js'
 import { motion } from "framer-motion";
 import { EarthCanvas } from "../canvas";
+import Tooltip from '@mui/material/Tooltip';
 
 const Header = () => {
 
@@ -36,11 +37,21 @@ const Header = () => {
             <h1><b>CS</b> | KMUTNB</h1>
           </div>
           <div className="icon_all_social">
-          <a href= {link.facebook} ><CiFacebook/></a>
-              <a href={link.instagram}><AiOutlineInstagram/></a>
+            <Tooltip title="Facebook">
+              <a href= {link.facebook} ><CiFacebook/></a>
+            </Tooltip>
+            <Tooltip title="Instagram">
+                <a href={link.instagram}><AiOutlineInstagram/></a>
+            </Tooltip>
+            <Tooltip title="GitHub">
               <a href={link.github}><AiOutlineGithub/></a>
+            </Tooltip>
+            <Tooltip title="Discord">
               <a href={link.discord}><FaDiscord/></a>
+            </Tooltip>
+            <Tooltip title="Email">
               <a href={link.email}><AiOutlineMail/></a>
+            </Tooltip> 
           </div>
         </div>
 
