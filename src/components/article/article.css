@@ -1,3 +1,7 @@
 #article{
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Itim', cursive;
+    
+    & h5,h1{
+        font-family: 'Russo One', sans-serif;
+    }
 }

@@ -32,6 +32,16 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+// cypersecurity
+import sqli from "./articlephoto/sqli.svg";
+import xss from "./articlephoto/XSS.png";
+import csrf from "./articlephoto/CSRF.png";
+import sm from "./articlephoto/sm.png";
+import basm from "./articlephoto/basm.png";
+import sde from "./articlephoto/sde.png";
+import hacker from "./articlephoto/hacker.png";
+import browser from "./articlephoto/browser.png";
+
 export {
   backend,
   creator,
@@ -63,4 +73,12 @@ export {
   photoshop,
   vegas,
   fontgoogle,
+  sqli,
+  xss,
+  csrf,
+  sm,
+  basm,
+  sde,
+  hacker,
+  browser,
 };
