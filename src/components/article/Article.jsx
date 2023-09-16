@@ -41,9 +41,10 @@ const ArticleCard = ({articles}) => (
         </li>
       ))}
     </ul>
-    <div className='text-secondary text-[16px] font-semibold '>
-      ขอบคุณรูปภาพจาก</div>
-    <a href={articles.credit}>{articles.credit}</a>
+    <div className='text-secondary text-[16px] font-semibold flex flex-col overflow-hidden'>
+      ขอบคุณรูปภาพจาก
+      <a href={articles.credit}>{articles.credit}</a>
+    </div>
   </VerticalTimelineElement>
 )
 
