@@ -1,12 +1,6 @@
 #videome{
     font-family: 'Russo One', sans-serif;
 }
-
-.react-player{
-    width: 800px;
-    height: 450px;
-}
-
 .video{
     display: flex;
     align-items: center;
