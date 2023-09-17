@@ -51,7 +51,7 @@ function App() {
       <About/>
       <Videome/>
       <Article/>
-      <Webtool/>
+      {/* <Webtool/> */}
       <Credit/>
       <Footer/>
       </BrowserRouter>
