@@ -29,12 +29,12 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <header id="home">
       {/* <Bg_particle/> */}
        <div className="container_header">
         <div className="header_nav">
           <div className="icon_cs">
-            <a href="#" data-no-blobity><h1><b>CS</b><span className='text-white'> | KMUTNB</span></h1></a>
+            <a href="#home" data-no-blobity><h1><b>CS</b><span className='text-white'> | KMUTNB</span></h1></a>
           </div>
           <div className="icon_all_social">
             <Tooltip title="Facebook">

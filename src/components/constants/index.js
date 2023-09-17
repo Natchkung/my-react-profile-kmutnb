@@ -21,6 +21,44 @@ import {
   browser,
 } from "../../assets";
 
+import {AiOutlineHome,AiOutlineUser,AiOutlineVideoCamera,AiOutlineCreditCard} from 'react-icons/ai';
+import {MdOutlineArticle} from 'react-icons/md';
+import {VscTools} from 'react-icons/vsc';
+
+
+export const links = [
+  {
+    name : 'Home',
+    icons: <AiOutlineHome/>,
+    hash: "#home",
+  },
+  {
+    name : 'About',
+    icons: <AiOutlineUser/>,
+    hash: "#about",
+  },
+  {
+    name : 'Videome',
+    icons: <AiOutlineVideoCamera/>,
+    hash: "#videome",
+  },
+  {
+    name : 'Article',
+    icons: <MdOutlineArticle/>,
+    hash: "#article",
+  },
+  {
+    name : 'Webtool',
+    icons: <VscTools/>,
+    hash: "#webtool",
+  },
+  {
+    name : 'Credit',
+    icons: <AiOutlineCreditCard/>,
+    hash: "#credit",
+  },
+];
+
 const technologies = [
   {
     name: "HTML 5",
