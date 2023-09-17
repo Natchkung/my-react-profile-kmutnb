@@ -58,7 +58,8 @@ const Credit = () => {
 								<p>ทดสอบเว็บไซต์</p>
 								<ul>
 									<li><a href="https://www.microsoft.com/en-us/edge/download?form=MA13FJ">Microsoft Edge [115]</a></li>
-                  <li><a href="https://www.google.com/intl/th_th/chrome/">Google Chrome [116]</a></li>
+								<li><a href="https://www.google.com/intl/th_th/chrome/">Google Chrome [116]</a></li>
+								<li><a href="https://www.mozilla.org">Mozilla Firefox [116]</a></li>
 								</ul>
 							<p>ตัดต่อวีดีโอและโปรแกรมตัดต่อภาพ</p>
               <ul>

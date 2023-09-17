@@ -92,7 +92,7 @@ const Header = () => {
           }
       }}
         >
-        {/* <EarthCanvas /> */}
+        <EarthCanvas />
         </motion.div>
       </div>
        </div>
