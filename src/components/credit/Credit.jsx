@@ -11,7 +11,7 @@ const Credit = () => {
   return (
     <section id="credit">
       <h1 className='text-center text-[3rem]' data-aos="fade-down" data-aos-duration="1500">CREDIT</h1>
-      <div className="wrapper">
+      <div className="wrapper relative">
         <div className="content" data-aos="zoom-in" data-aos-duration="1500">
         <div>
 							<h3><a href="https://www.cyfence.com/article/what-types-of-website-vulnerabilities-are-most-frequently-exploited/">บทความ (ที่มา)</a></h3>

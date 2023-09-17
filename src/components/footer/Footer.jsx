@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css';
-import logo from "../../logo.svg";
+import logo from "../../assets/logo.png";
 import {AiOutlineHome,AiOutlineUser,AiOutlineVideoCamera,AiOutlineCreditCard} from 'react-icons/ai';
 import {MdOutlineArticle} from 'react-icons/md';
 import {VscTools} from 'react-icons/vsc';

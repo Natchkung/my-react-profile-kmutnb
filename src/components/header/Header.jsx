@@ -34,7 +34,7 @@ const Header = () => {
        <div className="container_header">
         <div className="header_nav">
           <div className="icon_cs">
-            <h1><b>CS</b> | KMUTNB</h1>
+            <a href="#" data-no-blobity><h1><b>CS</b><span className='text-white'> | KMUTNB</span></h1></a>
           </div>
           <div className="icon_all_social">
             <Tooltip title="Facebook">
