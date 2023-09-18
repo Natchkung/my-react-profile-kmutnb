@@ -13,7 +13,7 @@ function Webtool() {
 
   return (
     <section id="webtool">
-        <h5 className='mt-[-200px] text-center font-medium text-slate-500' data-aos="fade-up" data-aos-duration="3000">DEVELOPMENT TOOLS</h5>
+        <h5 className='pt-[-200px] text-center font-medium text-slate-500' data-aos="fade-up" data-aos-duration="3000">DEVELOPMENT TOOLS</h5>
             <h1 className='text-center mb-8' data-aos="fade-down" data-aos-duration="3000">WEBSITE DEVELOPMENT TOOLS</h1>
         <div className="tech">
         <div className='flex flex-row flex-wrap justify-center gap-10'>

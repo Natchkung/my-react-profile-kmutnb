@@ -4,7 +4,6 @@ import {BrowserRouter} from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/Header';
-import Nav from './components/nav/Nav';
 import About from './components/about/About';
 import Videome from './components/videome/Videome';
 import Article from './components/article/Article';
@@ -13,6 +12,9 @@ import Footer from './components/footer/Footer';
 import Webtool from './components/webtool/Webtool';
 import { StarsCanvas } from './components/canvas';
 import Blobity from 'blobity';
+import {links} from "./components/constants";
+import { Link } from "react-scroll";
+// import { a } from '@react-spring/three';
 // "homepage": "http://project.cs.kmutnb.ac.th/~6604062636151/",
 
 function App() {
@@ -43,17 +45,23 @@ function App() {
     </div>
          ) : (
       <BrowserRouter>
-      <Nav/>
+
+      <nav>
+        {links.map((link)=>(
+          <Link activeClass="active" smooth spy to={link.name}>{link.icons}
+          </Link>
+        ))}
+      </nav>
       <div className='relative z-0'>
         <Header/>
           <StarsCanvas/>
         </div>
-      <About/>
-      <Videome/>
-      <Article/>
-      <Webtool/>
-      <Credit/>
-      <Footer/>
+        <About/>
+        <Videome/>
+        <Article/>
+        <Webtool/>
+        <Credit/>
+        <Footer/>
       </BrowserRouter>
 
       )}

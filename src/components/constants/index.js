@@ -28,32 +28,32 @@ import {VscTools} from 'react-icons/vsc';
 
 export const links = [
   {
-    name : 'Home',
+    name : 'home',
     icons: <AiOutlineHome/>,
     hash: "#home",
   },
   {
-    name : 'About',
+    name : 'about',
     icons: <AiOutlineUser/>,
     hash: "#about",
   },
   {
-    name : 'Videome',
+    name : 'videome',
     icons: <AiOutlineVideoCamera/>,
     hash: "#videome",
   },
   {
-    name : 'Article',
+    name : 'article',
     icons: <MdOutlineArticle/>,
     hash: "#article",
   },
   {
-    name : 'Webtool',
+    name : 'webtool',
     icons: <VscTools/>,
     hash: "#webtool",
   },
   {
-    name : 'Credit',
+    name : 'credit',
     icons: <AiOutlineCreditCard/>,
     hash: "#credit",
   },

@@ -56,7 +56,7 @@ const Article = () => {
 
   return (
     <section id="article">
-        <h5 className='mt-4 text-start font-medium text-sky-500' data-aos="fade-up" data-aos-duration="1500">COMPUTER SCIENCE ARTICLES</h5>
+        <h5 className='pt-4 text-start font-medium text-sky-500' data-aos="fade-up" data-aos-duration="1500">COMPUTER SCIENCE ARTICLES</h5>
           <h1 className='text-[3rem]' data-aos="fade-down" data-aos-duration="1500">ARTICLES</h1>
 
       <div className="mt-20 flex flex-col">

@@ -32,10 +32,10 @@
     --container-width-md: 86%;
     --container-width-sm: 90%;
 }
-
+/* 
 html{
     scroll-behavior: smooth;
-}
+} */
 
 ::-webkit-scrollbar{
     display: none;
@@ -67,7 +67,7 @@ h1{
 }
 
 section{
-    margin-top: 8rem;
+    padding-top: 8rem;
     /* height: 100vh; */
 }
 
