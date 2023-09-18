@@ -30,32 +30,26 @@ export const links = [
   {
     name : 'home',
     icons: <AiOutlineHome/>,
-    hash: "#home",
   },
   {
     name : 'about',
     icons: <AiOutlineUser/>,
-    hash: "#about",
   },
   {
     name : 'videome',
     icons: <AiOutlineVideoCamera/>,
-    hash: "#videome",
   },
   {
     name : 'article',
     icons: <MdOutlineArticle/>,
-    hash: "#article",
   },
   {
     name : 'webtool',
     icons: <VscTools/>,
-    hash: "#webtool",
   },
   {
     name : 'credit',
     icons: <AiOutlineCreditCard/>,
-    hash: "#credit",
   },
 ];
 
