@@ -7,6 +7,7 @@ import Scramblertext from './Scramblertext.js'
 import { motion } from "framer-motion";
 import { EarthCanvas } from "../canvas";
 import Tooltip from '@mui/material/Tooltip';
+import { Link } from "react-scroll";
 
 const Header = () => {
 
@@ -98,7 +99,7 @@ const Header = () => {
        </div>
        <div className='w-full flex justify-start items-center flex-col text-xs scroll'>
           Scroll to explore
-          <a href="#about" data-no-blobity>
+          <Link smooth to="about" data-no-blobity>
             <div className='w-[35px] h-[64px] rounded-3xl  border-solid border-2 border-sky-500  flex justify-center items-start p-2 mt-4 shadow-lg shadow-cyan-500/50 ...' >
             <motion.dev
               animate={{
@@ -112,7 +113,7 @@ const Header = () => {
               className="w-3 h-3 rounded-full bg-sky-500 mb-1"
             />
             </div>
-          </a>
+          </Link>
         </div>
     </header>
   )

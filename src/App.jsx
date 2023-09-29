@@ -48,7 +48,7 @@ function App() {
 
       <nav>
         {links.map((link)=>(
-          <Link activeClass="active" spy to={link.name}>{link.icons}
+          <Link activeClass="active" spy smooth to={link.name}>{link.icons}
           </Link>
         ))}
       </nav>
