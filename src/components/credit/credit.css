@@ -1,6 +1,7 @@
 #credit{
     width: 100%;
     margin-bottom: 8rem;
+    padding-top: 2rem;
 
     & h1{
         font-family: 'Russo One', sans-serif;

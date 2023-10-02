@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className='text-center mt-5 text-bold'>Copyright © 2023 Nutchanon Supmeechai. All Rights Reserved</p>
+      <p className='text-center mt-4 text-bold'>Copyright © 2023 Nutchanon Supmeechai. All Rights Reserved</p>
       
       
     </div>

@@ -5,6 +5,8 @@
     flex-direction: column;
     font-family: 'Russo One', sans-serif;
     width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
 }
 
 .content-player{
