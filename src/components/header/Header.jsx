@@ -11,10 +11,6 @@ import { Link } from "react-scroll";
 
 const Header = () => {
 
-  const photo = {
-    logo_cs: 'https://media.discordapp.net/attachments/1091963899827462225/1150142785081593876/world.png?width=447&height=447'
-  };
-
   const link = {
     facebook: 'https://www.facebook.com/Natx0082/',
     instagram: 'https://www.instagram.com/n_nnat_48/',
@@ -26,7 +22,7 @@ const Header = () => {
   const content_text = {
     content1: 'Hi, my name is Nutchanon Supmeechai',
     content2: 'STUDENT FORM',
-    content3: '',
+    content3: "",
   }
 
   return (
@@ -76,7 +72,9 @@ const Header = () => {
         <h1>{content_text.content1}</h1>
         <div className="content-animation">
         <span id="space-content">|</span><span id='type-writer'><Scramblertext/></span></div>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque enim cupiditate porro laudantium ipsum perspiciatis expedita nostrum. Quae eveniet aperiam, ducimus repellendus ad distinctio assumenda corrupti magnam est accusamus beatae optio alias unde quas possimus fugiat odit in id sequi non reiciendis expedita libero! Necessitatibus numquam impedit ex sequi?</h5>
+        <h5>I am studying in CS of Computer Science at King Mongkut's University of Technology North Bangkok <br></br>
+        This project that I made is part of the Fundamentals of Computer Science and Pro fessional lssues.<br></br>
+        Assigned by Prof. Dr. Natthakit Chituetrakul (NJR)</h5>
         </motion.div>
         <motion.div
           className="logo-content"

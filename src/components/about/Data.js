@@ -1,18 +1,20 @@
+import {
+  test,
+  test1,
+  test2
+} from "../../assets";
+
 export const countries = [
   {
-    image: "https://media.discordapp.net/attachments/1091963899827462225/1150473941954068571/brazil.jpg",
-    title: "About-me",
+    image: test2,
+    title: "Photo 1",
   },
   {
-    image: "https://media.discordapp.net/attachments/1091963899827462225/1150473941954068571/brazil.jpg",
-    title: "Brazil",
+    image: test1,
+    title: "Photo 2",
   },
   {
-    image: "https://media.discordapp.net/attachments/1091963899827462225/1150474594029940736/france.jpg",
-    title: "China",
-  },
-  {
-    image: "https://media.discordapp.net/attachments/1091963899827462225/1150474594289991772/china.jpg",
-    title: "France",
+    image: test,
+    title: "Photo 3",
   },
 ];

@@ -24,6 +24,10 @@ import {
 import {AiOutlineHome,AiOutlineUser,AiOutlineVideoCamera,AiOutlineCreditCard} from 'react-icons/ai';
 import {MdOutlineArticle} from 'react-icons/md';
 import {VscTools} from 'react-icons/vsc';
+import { BsBook } from 'react-icons/bs';
+import { FaComputer } from 'react-icons/fa6';
+import { TbPigMoney } from 'react-icons/tb';
+import { MdFamilyRestroom } from 'react-icons/md';
 
 
 export const links = [
@@ -179,4 +183,28 @@ const hackingwebsite = {
     content: 'ช่องโหว่ เป็นข้อบกพร่องของโค้ดหรือที่เรียกว่า “บั๊ก” ส่วนใหญ่จะพบในเว็บไซต์ เนื่องจากทุกเว็บไซต์จะมีการเขียนโค้ดเพื่อทำเป็นระบบหลังบ้านของเว็บไซต์ เมื่อโปรแกรมเมอร์เขียนโค้ดไม่รอบคอบ หรือเกิดการโจมตีรูปแบบใหม่ขึ้นจนทำให้โค้ดที่เขียนไว้นานแล้ว เกิดข้อผิดพลาดจนเป็นช่องโหว่และไม่สามารถป้องกันการโจมตีได้  ก็จะทำให้ผู้ประสงค์ร้าย หรือ แฮกเกอร์ เข้าถึงระบบ กระบวนการหรือแม้กระทั่งข้อมูลที่มีความสำคัญขององค์กรโดยที่ไม่ได้รับอนุญาตได้นั่นเอง ซึ่งการเข้าถึงดังกล่าวของผู้ประสงค์ร้าย หรือ แฮกเกอร์ จะเข้าจัดการระบบภายใน จนสามารถยึดเอาแอปพลิเคชัน ขโมยข้อมูล จนเกิดผลเสียหาย เช่น ทำให้เกิดการหยุดชะงักของบริการขนาดใหญ่ ถูกนำเอาข้อมูลภายในไปขายใน Darkweb  หรือ ใช้เรียกค่าไถ่ข้อมูล ฯลฯ'
 }
 
-export {  technologies, articles, hackingwebsite };
+const futuregoals = [
+  {
+    title: 'เป้าหมายทางการศึกษา',
+    detail: 'จบการศึกษาได้ผลการเรียนที่ดี และ สามารถนำความรู้ไปประกอบอาชีพได้',
+    icon: <BsBook/>,
+  },
+  {
+    title: 'เป้าหมายในการทำงาน',
+    detail: 'สมัครงานที่ทำงานเกี่ยวกับด้าน IT ดีๆถ้าเป็นไปได้จะสมัครในตำแหน่ง Full Stack Developer เป้าหมายสูงสุดคือตำแหน่ง Senior Developer และ อยากมีงานที่มั่นคง',
+    icon: <FaComputer/>,
+  },
+  {
+    title: 'เป้าหมายทางการเงิน',
+    detail: 'มีเงินเดือนที่มั่นคงสามารถเลี้ยงครอบครัวได้และสามารถมีเงินเก็บไว้ใช้ตอนเกษียณได้',
+    icon: <TbPigMoney/>,
+  },
+  {
+    title: 'เป้าหมายของครอบครัว',
+    detail: 'มีเวลาให้ครอบครัวสามารถใช้ชีวิตกับคนที่เรารักได้อย่างมีความสุข และ สามารถเลี้ยงลูกเติบโตมาอย่างมีคุณภาพได้',
+    icon: <MdFamilyRestroom/>,
+  },
+];
+
+
+export {  technologies, articles, hackingwebsite,futuregoals };

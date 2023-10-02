@@ -6,8 +6,8 @@ import Scrambler from "./Scrambler";
 export default function App() {
   // define the text to be scrambled as state.
   const [text, setText] = useState([
-    "STUDENT FROM KMUTNB ! !",
-    "Welcome to my world ! !",
+    "Welcome to My WebSite ! !",
+    "STUDENT FROM KMUTNB",
     "You can call me 'Nut'"
   ]);
   // create an instance of Scrambler using useRef.

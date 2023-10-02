@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=IBM+Plex+Sans+Thai:wght@500&family=Russo+One&display=swap');
 
+#about{
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+
 .container_about{
     font-family: 'Russo One', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
 }
 
 .container_photo_me{
@@ -22,12 +25,8 @@
 }
 
 .content_photo_me{
-    width: 70%;
-    height: 50vh;
-    border-radius: 20px;
-}
-
-.content_photo_me img{
+    width: 55%;
+    height: 65vh;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -48,6 +47,48 @@
 .secon-detail h3{
     font-size: 1.4rem;
     color: var(--color-primary);
+}
+.future-goals{
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 80%;
+
+    & h1{
+        font-family: 'Russo One', sans-serif;
+    }
+}
+
+.future-detail{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+	gap: 1.5em;
+}
+
+.future-detail-box{
+    margin-top: 2rem;
+    height: 280px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid var(--color-primary);
+    background-color: rgba(24, 24, 24, 0.5);
+    transition: all 0.5s;
+
+    & .icon{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--color-primary);
+    }
+
+    & h5{
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+}
+
+.future-detail-box:hover{
+    box-shadow: 1px 1px 20px var(--color-primary);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1020px){
@@ -85,6 +126,11 @@
 }
 
 @media screen and (max-width: 600px){
+
+    #about{
+        padding-bottom: 6rem;
+    }
+
     .container_about{
         flex-direction: column;
     }
@@ -109,5 +155,15 @@
         margin: 0;
         margin-top: 50px;
         text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 830px){
+    .future-detail-box{
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 2rem;
     }
 }

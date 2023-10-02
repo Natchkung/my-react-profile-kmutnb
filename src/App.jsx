@@ -19,14 +19,14 @@ import { Link } from "react-scroll";
 
 function App() {
   
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true)
-    setTimeout(() =>{
-      setLoading(false)
-    }, 5000)
-  }, [])
+  // useEffect(() => {
+  //   setLoading(true)
+  //   setTimeout(() =>{
+  //     setLoading(false)
+  //   }, 5000)
+  // }, [])
   
   const options = { color: 'rgb(0, 162, 255)',dotColor: '#fff',mode: 'slow' };
   new Blobity(options);
@@ -34,7 +34,7 @@ function App() {
   
   return (  
     <div className='Screen'>
-      {
+      {/* {
         loading ? (
           <div className="Loading">
       <HashLoader
@@ -43,7 +43,7 @@ function App() {
       loading={loading}
     />
     </div>
-         ) : (
+         ) : ( */}
       <BrowserRouter>
 
       <nav>
@@ -64,7 +64,7 @@ function App() {
         <Footer/>
       </BrowserRouter>
 
-      )}
+      {/* )} */}
     </div>
     
   );

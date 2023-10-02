@@ -20,6 +20,10 @@ import sde from "./articlephoto/sde.png";
 import hacker from "./articlephoto/hacker.png";
 import browser from "./articlephoto/browser.png";
 
+// about
+import test from "./aboutphoto/test.png"
+import test1 from "./aboutphoto/test1.png"
+import test2 from "./aboutphoto/test2.png"
 export {
   css,
   git,
@@ -41,4 +45,7 @@ export {
   sde,
   hacker,
   browser,
+  test,
+  test1,
+  test2,
 };

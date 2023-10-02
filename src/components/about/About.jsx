@@ -6,6 +6,7 @@ import VanillaTilt from 'vanilla-tilt';
 import { motion } from "framer-motion";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import {futuregoals} from "../constants";
 
 const About = () => {
 
@@ -35,7 +36,7 @@ const About = () => {
             <h1 className='text-center' data-aos="fade-left" data-aos-duration="1000">ABOUT ME</h1>
 			<div className="main-detail_me">
 			<div className="mt-4 text-center font-medium text-slate-500">
-			<h5 data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vel obcaecati possimus voluptatem quos commodi incidunt, exercitationem delectus iusto eligendi quasi quae, suscipit dignissimos ducimus soluta dolorum voluptatibus natus. Laborum beatae ullam iste deleniti ducimus delectus voluptatem aliquam reiciendis blanditiis! Non perspiciatis amet quibusdam in atque inventore! Veritatis, et ullam!</h5>
+			<h5 data-aos="fade-up" data-aos-duration="1000">Hello, I'm Mr. Nutchanon Supmeechai. My nickname is Nut. I am currently studying at Faculty of Science in CS of Computer Science at King Mongkut's University of Technology North Bangkok. Bachelor's degree, Year 1</h5>
 			</div>
 			<div className="secon-detail" >
 			<div data-aos="fade-up">
@@ -53,6 +54,10 @@ const About = () => {
 					<div>
 						<h3 data-aos="fade-left" data-aos-duration="2000">กำลังศึกษาอยู่ที่</h3>
 						<p data-aos="fade-right" data-aos-duration="2000">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.)</p>
+					</div>
+					<div>
+						<h3 data-aos="fade-left" data-aos-duration="2000">คณะและสาขาที่กำลังศึกษา</h3>
+						<p data-aos="fade-right" data-aos-duration="2000">วิทยาศาสตร์ประยุกต์ สาขา วิทยาการคอมพิวเตอร์</p>
 					</div>
 					<div>
 						<h3 data-aos="fade-left" data-aos-duration="2000">ที่อยู่ปัจจุบัน</h3>
@@ -80,25 +85,38 @@ const About = () => {
 						<ul>
 							<li data-aos="fade-right" data-aos-duration="2000">ฟ้า/น้ำเงิน</li>
 							<li data-aos="fade-left" data-aos-duration="2000">เขียว</li>
+							<li data-aos="fade-left" data-aos-duration="2000">ดำ</li>
 						</ul>
 					</div>
 					<div>
 						<h3 data-aos="fade-left" data-aos-duration="2000">งานอดิเรก</h3>
 						<ul>
-							<li data-aos="fade-right" data-aos-duration="2000">ดู YouTube</li>
-							<li data-aos="fade-left" data-aos-duration="2000">เล่นเกม</li>
+							<li data-aos="fade-right" data-aos-duration="2000">เล่นแบดมินตัน</li>
 							<li data-aos="fade-right" data-aos-duration="2000">ศึกษา เขียนเว็บไซต์</li>
 							<li data-aos="fade-left" data-aos-duration="2000">ศึกษา เขียนโปรแกรม</li>
 						</ul>
 					</div>
-					<div>
+					{/* <div>
 						<h3 data-aos="fade-left">เป้าหมายในอนาคต</h3>
 						<p data-aos="fade-right">Full Stack Developer และการเขียนโปรแกรมแขนงอื่น ๆ</p>
-					</div>
+					</div> */}
 			</div>
 			</div>
         </div>
       </div>
+	  <div className="future-goals">
+		<h1 className='text-center mb-4' data-aos="fade-up" data-aos-duration="2000">FUTURE GOALS</h1>
+		<h5 className='text-center' data-aos="fade-down" data-aos-duration="2000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป้าหมายในชีวิตของผมคือการเรียนให้จบและมีผลการเรียนที่ดีทำให้ครอบครัวภูมิใจและสามารถนำความรู้ที่ได้ระหว่างเรียนไปใช้ในการฝึกงานและการทำงานจริงและด้านอื่นๆได้อย่างมีประสิทธิภาพและอยากเข้าไปฝึกงานที่บริษัทที่มีชื่อเสียงเพื่อหาคอนเนคชั่นเพื่อเป็นทุนชีวิตในการหางานในอนาคตถ้าเป็นไปได้ผมจะไปสมัครงานตำแหน่ง Full Stack Developer แต่เป้าหมายสูงสุดคือตำแหน่ง Senior Developer และ อยากมีเงินที่มั่นคงและมีเวลาให้ครอบครัวตอนเกษียณจะได้ไม่ลำบาก</h5>
+		<div className="future-detail">
+		{futuregoals.map((e)=>(
+			<div className="future-detail-box" data-aos="zoom-in-down" data-aos-duration="2000">
+				<div className="icon">{e.icon}</div>
+				<h5 className='text-md'>{e.title}</h5>
+				<p>{e.detail}</p>
+			</div>
+			))}
+		</div>
+	  </div>
     </section>
   )
 }
