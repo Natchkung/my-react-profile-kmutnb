@@ -21,9 +21,10 @@ import hacker from "./articlephoto/hacker.png";
 import browser from "./articlephoto/browser.png";
 
 // about
-import test from "./aboutphoto/test.png"
-import test1 from "./aboutphoto/test1.png"
-import test2 from "./aboutphoto/test2.png"
+import test from "./aboutphoto/test.png";
+import test1 from "./aboutphoto/test1.png";
+import test2 from "./aboutphoto/test2.png";
+import wallvideo from './wallpapervideo.png';
 export {
   css,
   git,
@@ -48,4 +49,5 @@ export {
   test,
   test1,
   test2,
+  wallvideo,
 };
