@@ -18,10 +18,6 @@
     justify-content: center;
     width: 50%;
     height: 50%;
-    /* transform: 
-    perspective(5000px)
-    rotateY(20deg)
-    rotateX(20deg); */
 }
 
 .content_photo_me{
@@ -99,7 +95,7 @@
     .container_photo_me{
         flex-direction: column;
         width: 100%;
-        height: 50vh;
+        height: 70vh;
     }
     
     .content_photo_me{
@@ -125,6 +121,14 @@
 
 }
 
+@media screen and (max-width: 800px){
+    .container_photo_me{
+        flex-direction: column;
+        width: 100%;
+        height: 50vh;
+    }
+}
+
 @media screen and (max-width: 600px){
 
     #about{
@@ -138,7 +142,7 @@
     .container_photo_me{
         flex-direction: column;
         width: 100%;
-        height: 50vh;
+        height: 60vh;
     }
     
     .content_photo_me{

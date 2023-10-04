@@ -38,7 +38,7 @@ const Credit = () => {
 							<p>โดย นายณัฐชานน ทรัพย์มีชัย</p>
 						</div>
             <div>
-							<h3><a href="https://www.youtube.com/watch?v=N9Rk3d4fCJ8">วิดีโอที่เผยแพร่ (ที่มา)</a></h3>
+							<h3><a href="https://youtube.com/shorts/fBu61IZ2spI">วิดีโอที่เผยแพร่ (ที่มา)</a></h3>
 							<p>โดย <a href="https://www.youtube.com/channel/UC25TAr5RNi_RHdFaEJLWLNQ">Zeeouil</a></p>
 							<p>เผยแพร่บน <a  href="https://www.youtube.com/">YouTube</a></p>
 						</div>
